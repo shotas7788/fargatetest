@@ -8,7 +8,7 @@ services:
   web:
     build:
       context: .
-      dockerfile: ./docker/rails/dockerfile
+      dockerfile: ./docker/rails/Dockerfile
     ports:
       - '3000:3000'
     volumes:
@@ -19,7 +19,7 @@ services:
   db:
     build:
       context: .
-      dockerfile: ./docker/mysql/dockerfile
+      dockerfile: ./docker/mysql/Dockerfile
     ports:
       - '3306:3306'
     extends:
